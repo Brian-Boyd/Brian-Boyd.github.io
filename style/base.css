@@ -1,0 +1,467 @@
+/**************************************************************************/
+/* Base styles                                                            */
+/**************************************************************************/
+
+* {
+  outline:none;
+  line-height:150%;
+}
+
+body {
+  margin:0px;
+  padding:0px;
+  padding-bottom:20px;
+  background:url('../image/background.jpg') 0px 0px no-repeat;		
+}
+
+body,input,textarea,a {
+  color:#BBBBBB;
+  font:13px Arial;
+}
+
+textarea {
+  resize:none;
+  overflow:hidden;
+}
+
+a,textarea,input { 
+  outline:none; 
+}
+
+.clear-fix {
+ clear:both;
+}
+
+.overflow-fix {
+  height:100%;
+  overflow:hidden;
+}
+
+.float-left {
+  float:left;
+}
+
+.float-right {
+  float:right;
+}
+
+.box-center {
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+
+.position-relative {
+  position:relative !important;
+}
+
+p {
+  margin:0px;
+  padding:10px 0px 10px 0px;
+}
+
+a img {
+  border:none;
+}
+
+a {	
+  text-decoration:none !important;
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+a.image-link {
+  width:100%;
+  height:100%;
+  display:block;
+  text-decoration:none;
+}
+
+.preloader {
+  width:100%;
+  height:100%;
+  top:0px;
+  position:absolute;
+  background:url('../image/preloader.gif') 50% 50% no-repeat;
+}
+
+/**********************************************************************/
+/*	Layout 50x50                                                      */
+/**********************************************************************/
+
+.layout-50 {}
+
+.layout-50-left { 
+  clear:both;
+  float:left; 
+}
+
+.layout-50-right { 
+  float:right; 
+}
+
+.layout-50-left,
+.layout-50-right { 
+  width:48%; 
+}
+
+.layout-50-left span {
+  font-family:'Terminal Dosis:700','Arial';
+  font-size:20px;
+}
+
+/**********************************************************************/
+/*  Layout 60x40                                                      */
+/**********************************************************************/
+
+.layout-6040 {}
+
+.layout-6040-left {
+  width:58%; 
+  clear:both;
+  float:left; 
+}
+
+.layout-6040-right { 
+  width:38%;
+  float:right; 
+}
+
+/**********************************************************************/
+/*	Layout 90x10                                                      */
+/**********************************************************************/
+
+.layout-9010 {}
+
+.layout-9010-left {
+  width:89%; 
+  clear:both;
+  float:left; 
+}
+
+.layout-9010-right { 
+  width:9%;
+  float:right; 
+}
+
+/**************************************************************************/
+/*	Headers                                                               */
+/**************************************************************************/
+
+h1,h2,h3,h4,h5,h6
+{
+  margin:0px;
+  padding:0px;
+  color:#FFFFFF;
+  font-weight:400;
+  line-height:120%;
+  font-family:'Terminal Dosis','Arial';
+}
+
+h1 { font-size:32px; }
+h2 { font-size:28px; }
+h3 { font-size:24px; }
+h4 { font-size:20px; }
+h5 { font-size:16px; }
+h6 { font-size:12px; }
+
+/**************************************************************************/
+/*	List                                                                  */
+/**************************************************************************/
+
+ul.no-list {
+  margin:0px;
+  padding:0px;
+  list-style-type:none;		
+}
+
+/**************************************************************************/	
+/*	Scrollbars                                                            */
+/**************************************************************************/
+
+.jspVerticalBar {
+  width:10px;
+}
+
+.jspDrag {
+  background-color:#000000;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+}
+
+.jspTrack {
+  background:#3C3C3C;
+}
+
+.jspHover {
+  background-color:#909090;
+}
+
+/**************************************************************************/
+/* Qtip                                                                   */
+/**************************************************************************/
+
+.ui-tooltip-error .ui-tooltip-content,
+.ui-tooltip-success .ui-tooltip-content {
+  border:none;
+  color:#FFFFFF;
+  font-size:13px;
+}
+
+.ui-tooltip-content {
+  padding:10px 20px 10px 20px;
+}
+
+.ui-tooltip-error .ui-tooltip-content {
+  background:#E9431C;
+  text-shadow:0px 1px 0px #8C2811;
+}
+
+.ui-tooltip-success .ui-tooltip-content {
+  background:#61911B;
+  text-shadow:0px 1px 0px #3A5710;
+}
+        
+/**************************************************************************/
+/*	Main                                                                  */
+/**************************************************************************/
+
+div.main {
+  width:820px;
+}
+    
+/**************************************************************************/
+/*	Header                                                                  */
+/**************************************************************************/
+
+div.header {
+  width:100%;
+}
+
+div.header a.header-logo {
+  width:600px;
+  height:130px;
+  display:block;
+  background-repeat:no-repeat;
+  background-position:0px 0px;
+  background-image:url('../image/header_logo.png');
+}
+    
+/**************************************************************************/
+/*	Geneva                                                                 */
+/**************************************************************************/
+
+#geneva {
+  width:100%;
+  height:580px;
+  position:relative;
+  background-position:0px 0px;
+  background-repeat:no-repeat;     
+  background-image:url('../image/content_overlay.png');
+}
+    
+/**********************************************************************/
+/* Geneva / Box menu                                                  */
+/**********************************************************************/
+
+#geneva-box-menu {
+  margin:0px;
+  padding:0px;
+  height:100%;
+  #height:auto;
+  list-style-type:none;
+}
+
+#geneva-box-menu li {
+  top:10px;
+  left:10px;
+  opacity:0;
+  width:260px;
+  height:180px;
+  display:none;
+  position:absolute;
+  background-position:0px 0px;
+  background-repeat:no-repeat;
+}
+
+#geneva-box-menu li:hover,
+#geneva-box-menu li.selected {
+  opacity:1 !important;
+  background-position:0px -180px;
+}
+            
+#geneva-box-menu li span.title,
+#geneva-box-menu li:hover span,
+#geneva-box-menu li.selected span {
+  color:#FFFFFF !important;
+}
+
+#geneva-box-menu li.selected {
+  z-index:2;
+}
+
+#geneva-box-menu-element-summary       { background-image:url('../image/content_box_08.png'); }
+#geneva-box-menu-element-about         { background-image:url('../image/content_box_01.png'); }
+#geneva-box-menu-element-hire          { background-image:url('../image/content_box_04.png'); }
+#geneva-box-menu-element-programming   { background-image:url('../image/content_box_09.png'); }
+#geneva-box-menu-element-portfolio     { background-image:url('../image/content_box_05.png'); }
+#geneva-box-menu-element-toolbox       { background-image:url('../image/content_box_03.png'); }
+#geneva-box-menu-element-bucket        { background-image:url('../image/content_box_07.png'); }
+#geneva-box-menu-element-education     { background-image:url('../image/content_box_06.png'); }
+#geneva-box-menu-element-employment    { background-image:url('../image/content_box_02.png'); }
+
+#geneva-box-menu li a {
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+#geneva-box-menu li a:hover {
+  text-decoration:none;
+}
+                
+#geneva-box-menu li span.title,
+#geneva-box-menu li span.subtitle {
+	display:block;
+  margin-left:20px;
+	font-family:'Terminal Dosis','Arial';
+}
+	
+#geneva-box-menu li span.title {
+  font-size:24px;
+  padding-top:15px;
+  font-weight:500;
+}
+
+#geneva-box-menu li span.subtitle {
+  color:#858585;
+  font-size:18px;
+}
+                
+/**********************************************************************/
+/* Geneva / List menu                                                 */
+/**********************************************************************/
+
+#geneva-list-menu {
+  left:10px;
+  top:200px;
+  margin:0px;
+  height:0px;
+  padding:0px;
+  width:260px;
+  overflow:hidden;
+  position:absolute;
+  list-style-type:none;
+  background-position:0px 0px;
+  background-repeat:no-repeat;
+  background-image:url('../image/menu_box.png');
+}
+            
+#geneva-list-menu li { }
+
+#geneva-list-menu li:first-child {
+  margin-top:18px;
+}
+
+#geneva-list-menu li a {
+  color:#858585;
+  display:block;
+  font-size:16px;
+  font-weight:500;
+  padding:8px 5px 8px 20px;
+  font-family:'Terminal Dosis','Arial';
+}
+                
+#geneva-list-menu li a:hover,
+#geneva-list-menu li a.selected {
+  color:#FFFFFF;
+}
+
+#geneva-list-menu li a span {
+  float:left;
+  width:16px;
+  height:16px;
+  display:block;
+  margin-top:2px;
+  margin-right:12px;
+  background-repeat:no-repeat;
+  background-position:0px 0px;
+}
+                    
+#geneva-list-menu li a:hover span,
+#geneva-list-menu li a.selected span {
+  background-position:0px -16px;
+}
+
+#geneva-list-menu-element-summary span      { background-image:url('../image/menu_icon_summary.png');     }
+#geneva-list-menu-element-about span        { background-image:url('../image/menu_icon_about.png');       }
+#geneva-list-menu-element-hire span         { background-image:url('../image/menu_icon_hire.png');        }
+#geneva-list-menu-element-programming span  { background-image:url('../image/menu_icon_programming.png'); }
+#geneva-list-menu-element-portfolio span    { background-image:url('../image/menu_icon_portfolio.png');   }
+#geneva-list-menu-element-toolbox span      { background-image:url('../image/menu_icon_toolbox.png');     }
+#geneva-list-menu-element-bucket span       { background-image:url('../image/menu_icon_bucket.png');      }
+#geneva-list-menu-element-education span    { background-image:url('../image/menu_icon_education.png');   }
+#geneva-list-menu-element-employment span   { background-image:url('../image/menu_icon_employment.png');  }
+                
+/**********************************************************************/
+/* Geneva / Window                                                    */
+/**********************************************************************/
+
+#geneva-window {
+  top:10px;
+  right:-20px;
+  width:550px;
+  height:560px; 
+  display:none;
+  position:absolute;
+}
+
+#geneva-page {
+  background-color: #3A3A3A;
+  width:485px;
+  padding: 15px;
+}
+ 
+/**************************************************************************/
+/* Footer                                                                 */
+/**************************************************************************/
+
+div.footer {
+  float:left;
+  width:100%;
+  margin:20px 0px 20px 0px;
+}
+
+/**********************************************************************/
+/* Footer / Social List                                               */
+/**********************************************************************/
+
+div.footer ul.social-list {
+  float:right;
+}
+
+div.footer ul.social-list li {
+  float:left;
+  margin-left:15px;
+  padding:12px 0px 12px 0px;
+}
+            
+div.footer ul.social-list li a {
+  width:48px;
+  height:48px;
+  display:block;
+  background-position:0px 0px;
+  background-repeat:no-repeat;
+}
+
+.contact-brian {
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+.email-brian a {
+  font-size: 18px;
+  color: #FFF;
+}

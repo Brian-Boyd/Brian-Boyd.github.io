@@ -1,0 +1,141 @@
+/**********************************************************************/
+/*  Page / Header                                                     */
+/**********************************************************************/
+
+div.page h1 
+{  
+  font-size:30px;
+  font-weight:700;
+  margin-bottom:30px;
+}
+
+div.page h3
+{
+  font-size:24px;
+  margin:10px 0px 10px 0px;
+}
+
+/**********************************************************************/
+/*  H1 tags                                                           */
+/**********************************************************************/
+
+div.page-summary      h1 { color:#20A4BD; }
+div.page-about-us     h1 { color:#ECB600; }
+div.page-hire         h1 { color:#ECB600; }
+div.page-programming  h1 { color:#3787C1; }
+div.page-portfolio    h1 { color:#76B126; }
+div.page-toolbox      h1 { color:#DE7021; }
+div.page-bucket       h1 { color:#1BB5B6; }
+div.page-education    h1 { color:#489D28; }
+div.page-employment   h1 { color:#EA9519; }
+
+/**********************************************************************/
+/* Images / Header                                                    */
+/**********************************************************************/
+
+ul.portfolio-list li {
+  margin-bottom:30px;
+}
+
+/* Left Column */
+ul.portfolio-list li.left {
+  clear:both;
+  float:left;
+}
+
+/* Right Column */
+ul.portfolio-list li.right {
+  float:right;
+}
+        
+/* Image & Video Hover */
+div.page-images ul.portfolio-list li a.fancybox-image,
+div.page-videos ul.portfolio-list li a.fancybox-video {
+  width:230px;
+  height:138px;
+  display:block;
+  position:relative;
+}
+
+div.page-images ul.portfolio-list li a.fancybox-image img,
+div.page-videos ul.portfolio-list li a.fancybox-video img {
+  position:absolute;   
+}
+
+div.page-images ul.portfolio-list li a.fancybox-image span,
+div.page-videos ul.portfolio-list li a.fancybox-video span {
+  opacity:0;
+  width:100%;
+  height:100%;
+  cursor:pointer;
+  position:absolute;
+  background-color:#000000;
+  background-repeat:no-repeat;
+  background-position:50% 50%;
+  #filter:alpha(opacity=0);            
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+div.page-images ul.portfolio-list li a.fancybox-image span,
+div.page-videos ul.portfolio-list li a.fancybox-video span,
+div.page-images ul.portfolio-list li a.fancybox-image:hover span,
+div.page-videos ul.portfolio-list li a.fancybox-video:hover span {
+  transition:all 0.3s ease-in-out;
+  -o-transition:all 0.3s ease-in-out;
+  -ms-transition:all 0.3s ease-in-out;
+  -moz-transition:all 0.3s ease-in-out;
+  -webkit-transition:all 0.3s ease-in-out;                 
+}
+
+div.page-images ul.portfolio-list li a.fancybox-image:hover span,
+div.page-videos ul.portfolio-list li a.fancybox-video:hover span {
+  opacity:0.8;
+  #filter:alpha(opacity=80);            
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+            
+div.page-images ul.portfolio-list li a.fancybox-image span  { background-image:url('../image/image_hover.png'); }
+div.page-videos ul.portfolio-list li a.fancybox-video span  { background-image:url('../image/video_hover.png'); }
+
+/* Header */
+ul.portfolio-list li h3 {
+  #width:220px;
+  margin-top:5px;
+  margin-bottom:0px;
+}                
+
+/* Portfolio Link */
+ul.portfolio-list li a.portfolio-link {
+  font-size:16px;
+}
+
+ul.portfolio-list li a.portfolio-link:hover {
+  text-decoration:underline !important;
+}
+
+div.page-images ul.portfolio-list li a.portfolio-link { color:#7BA827; }
+div.page-videos ul.portfolio-list li a.portfolio-link { color:#59991B; }
+
+/**********************************************************************/
+/* Other                                                              */
+/**********************************************************************/
+
+.table-head {
+  background-color: #235C90;
+  color: #FFF;
+}
+
+table td {
+  vertical-align: top;
+}
+
+div.page h1 {  
+  font-size:30px;
+  font-weight:700;
+  margin-bottom:0;
+}
+
+.port a {
+  font-size: 18px;
+  color: #7ba827;
+}
