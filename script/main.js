@@ -17,14 +17,29 @@ $(document).ready(function()
 
 });
 
-// Create the tooltips only when document ready
-$(document).ready(function()
-{
-  $('.resume').qtip({
-    content: 'Download and view my PDF resume version!',
-    position: {
-      target: 'mouse', // Track the mouse as the positioning target
-      adjust: { x: 5, y: 5 } // Offset it slightly from under the mouse
-    }
+// content works, but the other options do not
+$(document).ready(function() {
+  $('a').each(function() {
+    $('[title!=""]').qtip({
+      content: {
+        text: $(this).attr('title'),
+      },
+      style: {
+        tip: "topLeft",
+        classes: "ui-tooltip-light ui-tooltip-shadow ui-tooltip-rounded ui-tooltip-wide",
+        width: 150
+      },
+      position: {
+        at: "top center",
+        my: "top left"
+      },
+      show: {
+        solo: true
+      },
+      hide: {
+        delay: 1000,
+        fixed: true
+      }
+    });
   });
 });
